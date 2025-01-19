@@ -11,7 +11,7 @@ RUN pip install -r requirements.txt
 WORKDIR /app
 
 # Copiar el script Python desde el directorio actual al contenedor
-COPY main.py /app/
+COPY . /app/
 
 # Ejecutar el script Python
 CMD ["python", "main.py"]
